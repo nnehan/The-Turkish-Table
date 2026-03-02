@@ -1,0 +1,230 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TOGGLE BUTTON */
+#modeToggle{
+    margin-left: 1050px;
+    margin-top: -50px;
+}
+
+.mode-btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.mode-btn:hover {
+    transform: scale(1.2);
+}
+  
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+    text-align: center;
+}
+
+body p{
+  font-weight: bolder;
+}
+
+/* CONTAINER FIXED WIDTH */
+.container {
+    width: 1280px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0;
+    background-color: #001d3d;
+}
+
+header h1 {
+    padding-top: 30px;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: -85px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 175px;
+}
+
+.nav-links li {
+    gap: 40px;
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: default;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #001d3d;
+    background-color: #e30a17;
+    padding: 15px;
+}
+
+/* SECTIONS */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.about p{
+  margin-top: -50px;
+}
+
+/* PRODUCTS */
+.product-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.product-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product-card {
+    width: 700px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product-display button {
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+#productName{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+#productImage{
+  width: 100%
+}
+
+.products h2{
+  margin-bottom: 5px;
+}
+
+/* GAME */
+.game input {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.game p{
+    margin-top: -50px;
+    padding-bottom: 15px;
+}
+
+button{
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+/* CONTACT */
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact{
+  border: 2px solid;
+  background-color: #001d3d;
+  border-radius: 4px;
+  margin-left: 450px;
+  margin-right: 450px;
+  font-weight: bolder;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#fullName, #phone, #email, #comments {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#submit{
+  margin-left: 50px;
+  margin-right: 50px;
+  font-weight: bolder;
+}
+
+/* FOOTER */
+footer {
+    margin-left: 300px;
+    margin-right: 300px;
+    padding: 80px 0px;
+    margin-top: 50px;
+    font-weight: bold;
+    background-color: #001d3d;
+}
+
+/* LIGHT MODE */
+body.light {
+    background-color: #ffffff;
+    color: #e30a17;
+    background-image: url("https://assets.micontenthub.com/traveloffers/travel-tips/the-beautiful-turquoise-coast-of-turkey_m87_aNHyf.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* DARK MODE */
+body.dark {
+    background-color: #700000;
+    color: #ffffff;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("https://assets.micontenthub.com/traveloffers/travel-tips/the-beautiful-turquoise-coast-of-turkey_m87_aNHyf.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.dark .nav-links li a {
+    text-decoration: none;
+    color: #001d3d;
+    background-color: #ffffff;
+    padding: 15px;
+}
